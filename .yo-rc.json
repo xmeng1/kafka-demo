@@ -1,0 +1,47 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "science.mengxin.java.kafka",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.0.0",
+    "applicationType": "monolith",
+    "baseName": "KafkaDemo",
+    "packageName": "science.mengxin.java.kafka",
+    "packageFolder": "science/mengxin/java/kafka",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "21dbe0afae93b59a56449c3f71f84d115b59534a",
+    "clientFramework": "angularX",
+    "useSass": true,
+    "clientPackageManager": "yarn",
+    "testFrameworks": [
+      "gatling",
+      "cucumber",
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "zh-cn",
+      "fr",
+      "de",
+      "ru",
+      "es",
+      "vi"
+    ]
+  }
+}
