@@ -1,3 +1,18 @@
+# Develop Note
+
+## Kafka Official tutorial
+
+How to display the message in kafka docker 
+
+```bash
+# exec bash for docker
+docker exec -it docker_kafka_1 /bin/bash
+cd opt/kafka/bin/
+# monitor the topic
+./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic greetings --from-beginning
+```
+
+
 # KafkaDemo
 This application was generated using JHipster 5.0.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v5.0.0](https://www.jhipster.tech/documentation-archive/v5.0.0).
 

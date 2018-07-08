@@ -22,7 +22,7 @@ public class ProducerResource {
     @Timed
     public void produce(@PathVariable int count) {
         while(count > 0) {
-            channel.send(MessageBuilder.withPayload(new Greeting().setMessage("Hello world!: " + count)).build());
+            channel.send(MessageBuilder.withPayload(new Greeting().setMessage("Hello world!: " + count + System.currentTimeMillis())).build());
             count--;
         }
     }
