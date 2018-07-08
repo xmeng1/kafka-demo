@@ -37,6 +37,11 @@ spring:
                     brokers: localhost
                     zk-nodes: localhost
             bindings:
+                messageChannel:
+                    destination: greetings
+                    content-type: application/json
+                subscribableChannel:
+                    destination: greetings
                 output:
                     destination: topic-jhipster
     datasource:

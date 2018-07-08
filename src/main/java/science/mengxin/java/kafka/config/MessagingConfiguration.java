@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.integration.annotation.InboundChannelAdapter;
 import org.springframework.integration.core.MessageSource;
 import org.springframework.messaging.support.GenericMessage;
+import science.mengxin.java.kafka.messaging.ConsumerChannel;
+import science.mengxin.java.kafka.messaging.ProducerChannel;
 
 /**
  * Configures Spring Cloud Stream support.
@@ -18,7 +20,7 @@ import org.springframework.messaging.support.GenericMessage;
  * See http://docs.spring.io/spring-cloud-stream/docs/current/reference/htmlsingle/
  * for the official Spring Cloud Stream documentation.
  */
-@EnableBinding(value = { Source.class })
+@EnableBinding(value = { Source.class, ProducerChannel.class, ConsumerChannel.class })
 public class MessagingConfiguration {
 
     /**
